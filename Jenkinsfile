@@ -34,3 +34,5 @@ pipeline {
                    docker images
             }
         }
+    }
+}    
