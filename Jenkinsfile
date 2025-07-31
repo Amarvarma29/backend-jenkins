@@ -27,11 +27,13 @@ pipeline {
             steps {
                 sh 'npm install'
             }
+        }
         stage('Docker build') {
             steps {
                 sh """
                    docker build -t amarvarma/backend:${appVersion} .
                    docker images
+                """
             }
         }
     }
